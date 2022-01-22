@@ -1,38 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+    --primary-white: #fff;
+    --primary-gray: rgb(73, 73, 73);
+}
+
 .App {
-  text-align: center;
+    background-color: #23252c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.img {
+    width: 317px;
+    height: 317px;
+}
+.card {
+    margin: 44px;
+    background-color: #1a1b21;
+    width: 317px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content h1 {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content h2 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.8px;
+    line-height: 15px;
+    color: #f3bf99;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.content h3 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.24px;
+    line-height: 150%;
+    /* identical to box height, or 15px */
+    text-align: center;
+    margin-top: 6px;
+    color: #f5f5f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content .mail {
+    background: #ffffff;
+}
+
+.content .linkedin {
+    background: #5093e2;
+    margin-left: 14px;
+    color: var(--primary-white);
+}
+
+.content .mail,
+.content .linkedin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    border: none;
+    width: 115px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.content .mail i,
+.content .linkedin i {
+    margin-right: 4px;
+}
+
+.content .contact {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    text-align: left;
+    width: 247px;
+    margin-left: 35px;
+}
+
+.content h4 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    color: #f5f5f5;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.content p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.24px;
+    line-height: 150%;
+    /* or 15px */
+    color: #dcdcdc;
+}
+
+.footer {
+    background: #161619;
+    margin-top: 35px;
+}
+
+.footer i {
+    background: #161619;
+    margin: 10px;
+    width: 25px;
+    color: #918e9b;
+    cursor: pointer;
 }
